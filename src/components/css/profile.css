@@ -6,7 +6,7 @@
   border: 2px solid #dde794;
   border-radius: 20px;
   overflow: hidden;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .description {
@@ -17,16 +17,15 @@
   background-color: #dde794;
 }
 
-.avatar {
+.profile .avatar {
   margin: auto;
   max-width: 90%;
   border-radius: 50%;
   background-color: #eeeeee;
 }
-
-.name,
-.tag,
-.location {
+.profile .name,
+.profile .tag,
+.profile .location {
   margin: 8px auto 0;
   font-size: 24px;
 }
