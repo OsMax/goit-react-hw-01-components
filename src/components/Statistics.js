@@ -1,5 +1,5 @@
 import './css/statistics.css';
-import Prop from 'prop-types';
+// import Prop from 'prop-types';
 
 function getRandomHexColor() {
   return (
