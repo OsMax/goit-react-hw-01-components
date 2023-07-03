@@ -1,4 +1,4 @@
-.friend-list {
+.friendList {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -9,7 +9,7 @@
   text-align: center;
   margin-bottom: 60px;
 }
-.friend-list .item {
+.item {
   display: flex;
   gap: 20px;
   align-items: center;
@@ -27,7 +27,7 @@
   box-shadow: 5px 2px 3px #8e945e;
 }
 
-.friend-list .avatar {
+.avatar {
   height: 100px;
   background-color: #ffffff;
   border-radius: 20px;

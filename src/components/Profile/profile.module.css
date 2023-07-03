@@ -17,15 +17,15 @@
   background-color: #dde794;
 }
 
-.profile .avatar {
+.avatar {
   margin: auto;
   max-width: 90%;
   border-radius: 50%;
   background-color: #eeeeee;
 }
-.profile .name,
-.profile .tag,
-.profile .location {
+.name,
+.tag,
+.location {
   margin: 8px auto 0;
   font-size: 24px;
 }

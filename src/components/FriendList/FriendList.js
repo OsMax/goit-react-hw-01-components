@@ -1,4 +1,4 @@
-import './css/friend-list.css';
+import css from './friend-list.module.css';
 
 function status(isOnline) {
   return isOnline ? '#22ff55' : '#ff0000';
@@ -6,15 +6,15 @@ function status(isOnline) {
 
 export const FriendList = ({ friends }) => {
   return (
-    <ul className="friend-list">
+    <ul className={css.friendList}>
       {friends.map(friend => (
-        <li key={friend.id} className="item">
+        <li key={friend.id} className={css.item}>
           <span
-            className="status"
+            className={css.status}
             style={{ backgroundColor: status(friend.isOnline) }}
           ></span>
-          <img className="avatar" src={friend.avatar} alt={friend.name} />
-          <p className="name">{friend.name}</p>
+          <img className={css.avatar} src={friend.avatar} alt={friend.name} />
+          <p className={css.name}>{friend.name}</p>
         </li>
       ))}
     </ul>
