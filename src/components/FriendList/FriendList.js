@@ -1,21 +1,17 @@
 import css from './friend-list.module.css';
 
-function status(isOnline) {
-  return isOnline ? '#22ff55' : '#ff0000';
-}
+import { FriendListItem } from 'components/FriendListItem/FriendListItem';
 
 export const FriendList = ({ friends }) => {
   return (
     <ul className={css.friendList}>
       {friends.map(friend => (
-        <li key={friend.id} className={css.item}>
-          <span
-            className={css.status}
-            style={{ backgroundColor: status(friend.isOnline) }}
-          ></span>
-          <img className={css.avatar} src={friend.avatar} alt={friend.name} />
-          <p className={css.name}>{friend.name}</p>
-        </li>
+        <FriendListItem
+          key={friend.id}
+          avatar={friend.avatar}
+          name={friend.name}
+          isOnline={friend.isOnline}
+        />
       ))}
     </ul>
   );
